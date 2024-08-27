@@ -1,0 +1,58 @@
+body{
+  font-family:sans-serif;
+}
+.calendar {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: aqua;
+  border: 2px solid grey;
+  box-shadow:2px 2px 7px rgb(25, 24, 24);
+  /* overflow: hidden; */
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: blueviolet;
+  color:aliceblue;
+}
+header button{
+  background-color: blueviolet;
+  border: none;
+  outline:none;
+  color: aliceblue;
+  font-size: 30px;
+
+}
+.week{
+  display: grid;
+  grid-template-columns: repeat(7 , 1fr);
+  /* padding: 20px; */
+  gap: 2px;
+  /* font-size: 20px; */
+  /* background-color: aqua; */
+  font-size: larger;
+  padding:10px 0px;
+}
+.days{
+  display: grid;
+  grid-template-columns: repeat(7 , 1fr);
+  /* padding: 20px; */
+  /* gap: 2px; */
+  /* font-size: 20px; */
+}
+.days div{
+  font-size: 20px;
+  padding:20px;
+  transition: 0.3s ease;
+  /* background-color: aqua; */
+  /* border-radius: 50%; */
+}
+.days div:hover{
+  background-color: rgb(27, 125, 58);
+  color: white;
+  scale: 1.2;
+}
